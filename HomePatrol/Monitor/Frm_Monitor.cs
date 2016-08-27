@@ -38,10 +38,18 @@ namespace Monitor
 
         private void UpdateForm()
         {
-            lbl_SystemName.Text = Scanner.ScannerInfo.System.Name;
-            lbl_DepartmentName.Text = Scanner.ScannerInfo.Department.Name;
-            lbl_ConvFreq.Text = Scanner.ScannerInfo.ConvFrequency.Name;
-            lbl_viewDescrip.Text = Scanner.ScannerInfo.ViewDescription.Overwrite.Text;
+            try
+            {
+                lbl_SystemName.Text = Scanner.ScannerInfo.System.Name;
+                lbl_DepartmentName.Text = Scanner.ScannerInfo.Department.Name;
+                lbl_ConvFreq.Text = Scanner.ScannerInfo.ConvFrequency.Name;
+                lbl_viewDescrip.Text = Scanner.ScannerInfo.ViewDescription.Overwrite.Text;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Warning an error has occured... Continuing");
+            }
+
         }
     }
 }
