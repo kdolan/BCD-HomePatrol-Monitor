@@ -43,7 +43,7 @@ namespace Monitor
                 lbl_SystemName.Text = Scanner.ScannerInfo.System.Name;
                 lbl_DepartmentName.Text = Scanner.ScannerInfo.Department.Name;
                 lbl_ConvFreq.Text = Scanner.ScannerInfo.ConvFrequency.Name;
-                lbl_viewDescrip.Text = Scanner.ScannerInfo.ViewDescription.Overwrite.Text;
+                lbl_viewDescrip.Text = Scanner.ScannerInfo.ViewDescription.Overwrite != null ? Scanner.ScannerInfo.ViewDescription.Overwrite.Text : "Busy (Listening)";
             }
             catch (Exception ex)
             {
