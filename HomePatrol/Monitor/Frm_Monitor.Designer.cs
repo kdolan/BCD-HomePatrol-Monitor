@@ -37,36 +37,44 @@
             // lbl_SystemName
             // 
             this.lbl_SystemName.AutoEllipsis = true;
-            this.lbl_SystemName.Location = new System.Drawing.Point(12, 9);
+            this.lbl_SystemName.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SystemName.ForeColor = System.Drawing.Color.White;
+            this.lbl_SystemName.Location = new System.Drawing.Point(2, 4);
             this.lbl_SystemName.Name = "lbl_SystemName";
-            this.lbl_SystemName.Size = new System.Drawing.Size(241, 18);
+            this.lbl_SystemName.Size = new System.Drawing.Size(259, 18);
             this.lbl_SystemName.TabIndex = 0;
             this.lbl_SystemName.Text = "label1";
             // 
             // lbl_DepartmentName
             // 
             this.lbl_DepartmentName.AutoEllipsis = true;
-            this.lbl_DepartmentName.Location = new System.Drawing.Point(12, 36);
+            this.lbl_DepartmentName.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DepartmentName.ForeColor = System.Drawing.Color.White;
+            this.lbl_DepartmentName.Location = new System.Drawing.Point(2, 31);
             this.lbl_DepartmentName.Name = "lbl_DepartmentName";
-            this.lbl_DepartmentName.Size = new System.Drawing.Size(241, 19);
+            this.lbl_DepartmentName.Size = new System.Drawing.Size(259, 19);
             this.lbl_DepartmentName.TabIndex = 1;
             this.lbl_DepartmentName.Text = "label2";
             // 
             // lbl_ConvFreq
             // 
             this.lbl_ConvFreq.AutoEllipsis = true;
-            this.lbl_ConvFreq.Location = new System.Drawing.Point(12, 65);
+            this.lbl_ConvFreq.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ConvFreq.ForeColor = System.Drawing.Color.White;
+            this.lbl_ConvFreq.Location = new System.Drawing.Point(2, 60);
             this.lbl_ConvFreq.Name = "lbl_ConvFreq";
-            this.lbl_ConvFreq.Size = new System.Drawing.Size(241, 16);
+            this.lbl_ConvFreq.Size = new System.Drawing.Size(259, 16);
             this.lbl_ConvFreq.TabIndex = 2;
             this.lbl_ConvFreq.Text = "label3";
             // 
             // lbl_viewDescrip
             // 
             this.lbl_viewDescrip.AutoEllipsis = true;
-            this.lbl_viewDescrip.Location = new System.Drawing.Point(12, 91);
+            this.lbl_viewDescrip.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_viewDescrip.ForeColor = System.Drawing.Color.White;
+            this.lbl_viewDescrip.Location = new System.Drawing.Point(2, 86);
             this.lbl_viewDescrip.Name = "lbl_viewDescrip";
-            this.lbl_viewDescrip.Size = new System.Drawing.Size(241, 14);
+            this.lbl_viewDescrip.Size = new System.Drawing.Size(259, 14);
             this.lbl_viewDescrip.TabIndex = 3;
             this.lbl_viewDescrip.Text = "label4";
             // 
@@ -74,6 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(265, 108);
             this.Controls.Add(this.lbl_viewDescrip);
             this.Controls.Add(this.lbl_ConvFreq);
