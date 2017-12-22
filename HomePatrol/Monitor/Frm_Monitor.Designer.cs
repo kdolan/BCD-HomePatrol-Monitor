@@ -32,6 +32,7 @@
             this.lbl_DepartmentName = new System.Windows.Forms.Label();
             this.lbl_ConvFreq = new System.Windows.Forms.Label();
             this.lbl_viewDescrip = new System.Windows.Forms.Label();
+            this.btn_mute = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_SystemName
@@ -78,12 +79,23 @@
             this.lbl_viewDescrip.TabIndex = 3;
             this.lbl_viewDescrip.Text = "label4";
             // 
+            // btn_mute
+            // 
+            this.btn_mute.Location = new System.Drawing.Point(218, 82);
+            this.btn_mute.Name = "btn_mute";
+            this.btn_mute.Size = new System.Drawing.Size(43, 23);
+            this.btn_mute.TabIndex = 5;
+            this.btn_mute.Text = "Mute";
+            this.btn_mute.UseVisualStyleBackColor = true;
+            this.btn_mute.Click += new System.EventHandler(this.btn_mute_Click);
+            // 
             // Frm_Monitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(265, 108);
+            this.Controls.Add(this.btn_mute);
             this.Controls.Add(this.lbl_viewDescrip);
             this.Controls.Add(this.lbl_ConvFreq);
             this.Controls.Add(this.lbl_DepartmentName);
@@ -102,6 +114,7 @@
         private System.Windows.Forms.Label lbl_DepartmentName;
         private System.Windows.Forms.Label lbl_ConvFreq;
         private System.Windows.Forms.Label lbl_viewDescrip;
+        private System.Windows.Forms.Button btn_mute;
     }
 }
 

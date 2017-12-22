@@ -24,7 +24,6 @@ namespace Monitor
         private void Frm_Monitor_Load(object sender, EventArgs e)
         {
             Scanner.ScannerUpdated += ScannerUpdated;
-            TopMost = true;
         }
 
         private void ScannerUpdated()
@@ -49,7 +48,13 @@ namespace Monitor
             {
                 Console.WriteLine("Warning an error has occured... Continuing");
             }
+            TopMost = true;
 
+        }
+
+        private void btn_mute_Click(object sender, EventArgs e)
+        {
+            Scanner.MuteToggle();
         }
     }
 }

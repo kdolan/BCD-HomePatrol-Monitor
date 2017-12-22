@@ -57,6 +57,9 @@ namespace HomePatrol.Controller
             var rawData = _port.ReadExisting();
             inBuffer = inBuffer + rawData;
 
+            if (inBuffer.Contains("VOL,OK\r"))
+                inBuffer = inBuffer.Replace("VOL,OK\r", "");
+
             if (inBuffer.Contains("</ScannerInfo>"))
             {
                 //Contains complete dataset
@@ -89,6 +92,11 @@ namespace HomePatrol.Controller
         {
             //Ask for data
             _port.Write("GSI\r");
+        }
+
+        public void MuteToggle()
+        {
+            _port.Write(int.Parse(ScannerInfo.Property.Vol) == 0 ? "VOL,10\r" : "VOL,0\r");
         }
     }
 }
